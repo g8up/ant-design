@@ -30,7 +30,7 @@ import moment from 'moment';
 | className | 选择器类名 | string | '' |  |
 | clearText | 清除按钮的提示文案 | string | clear |  |
 | defaultOpenValue | 当 defaultValue/value 不存在时，可以设置面板打开时默认选中的值 | [moment](http://momentjs.com/) | moment() |  |
-| defaultValue | 默认时间 | [moment](http://momentjs.com/) | 无 |  |
+| defaultValue | 默认时间 | [moment](http://momentjs.com/) or `null` | 无 |  |
 | disabled | 禁用全部操作 | boolean | false |  |
 | disabledHours | 禁止选择部分小时选项 | function() | 无 |  |
 | disabledMinutes | 禁止选择部分分钟选项 | function(selectedHour) | 无 |  |
@@ -49,7 +49,7 @@ import moment from 'moment';
 | suffixIcon | 自定义的选择框后缀图标 | ReactNode | - | 3.10.0 |
 | clearIcon | 自定义的清除图标 | ReactNode | - | 3.14.0 |
 | use12Hours | 使用 12 小时制，为 true 时 `format` 默认为 `h:mm:ss a` | boolean | false |  |
-| value | 当前时间 | [moment](http://momentjs.com/) | 无 |  |
+| value | 当前时间 | [moment](http://momentjs.com/) or `null`| 无 |  |
 | onChange | 时间发生变化的回调 | function(time: moment, timeString: string): void | 无 |  |
 | onOpenChange | 面板打开/关闭时的回调 | (open: boolean): void | 无 |  |
 
